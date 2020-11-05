@@ -4,15 +4,15 @@ import org.junit.Test;
 public class TestingUserRegProblem {
     
 	@Test
-    public void testEmailId_MustReturnTrue() {
+    public void testPhoneNumber_MustReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isEmailValid = userRegistration.checkEmail("abc.xyz@Bridgelabz.co.in");
-        Assert.assertTrue(isEmailValid);
+        boolean isPhoneNumberValid = userRegistration.checkPhoneNum("91 9898989898");
+        Assert.assertTrue(isPhoneNumberValid);
     }
     @Test
-    public void testEmailId_MustReturnFalse() {
+    public void testPhoneNumber_MustReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isEmailInvalid = userRegistration.checkEmail("abc@.BridgeLabz");
-        Assert.assertFalse(isEmailInvalid);
+        boolean isPhoneNumberInValid = userRegistration.checkPhoneNum("9898989898");
+        Assert.assertFalse(isPhoneNumberInValid);
     }
 }
