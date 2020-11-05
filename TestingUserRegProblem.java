@@ -4,15 +4,15 @@ import org.junit.Test;
 public class TestingUserRegProblem {
     
     @Test
-    public void testPassword2_MustReturnTrue() {
+    public void testPassword4_MustReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isPassword2Valid = userRegistration.checkPassword2("Password");
-        Assert.assertTrue(isPassword1Valid);
+        boolean isPassword4Valid = userRegistration.checkPassword4("Password");
+        Assert.assertTrue(isPassword4Valid);
     }
     @Test
-    public void testPassword2_MustReturnFalse() {
+    public void testPassword4_MustReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isPassword2InValid = userRegistration.checkPassword2("password");
-        Assert.assertFalse(isPassword2InValid);
+        boolean isPassword4InValid = userRegistration.checkPassword4("password");
+        Assert.assertFalse(isPassword4InValid);
     }
 }
