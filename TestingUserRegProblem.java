@@ -2,17 +2,17 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestingUserRegProblem {
-    @Test
-    public void testingFirstName() {
+    
+	@Test
+    public void testLastNameValidMustReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isFNameValid = userRegistration.checkFName("Geeth");
-        Assert.assertTrue(isFNameValid);
+        boolean isLnameValid = userRegistration.Lname("Chandra");
+        Assert.assertTrue(isLnameValid);
     }
-
     @Test
-    public void testFirstNameInvalidMustReturnFalse() {
+    public void testLastNameValidMustReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isFnameValid = userRegistration.checkFName("geeth");
-        Assert.assertFalse(isFnameValid);
+        boolean isLnameInValid = userRegistration.Lname("chandra");
+        Assert.assertFalse(isLnameInValid);
     }
 }
