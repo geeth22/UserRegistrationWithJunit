@@ -6,13 +6,13 @@ public class TestingUserRegProblem {
     @Test
     public void testPassword_MustReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isPasswordValid = userRegistration.checkPassword("X@123xyz");
+        boolean isPasswordValid = userRegistration.checkPassword("password");
         Assert.assertTrue(isPasswordValid);
     }
     @Test
     public void testPassword_MustReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean isPasswordInValid = userRegistration.checkPassword("xyzxyzxyz");
+        boolean isPasswordInValid = userRegistration.checkPassword("xyzz");
         Assert.assertFalse(isPasswordInValid);
     }
 }
